@@ -92,7 +92,7 @@ function Home() {
 // HTML Lab Viewer Component
 function HTMLLabViewer({ htmlPath }) {
   // Prepend PUBLIC_URL to htmlPath to ensure it works with the deployment base path
-  // process.env.PUBLIC_URL will be "/React-Course-Udemy" when deployed
+  // process.env.PUBLIC_URL will be "/Course_FE" when deployed
   const fullPath = `${process.env.PUBLIC_URL || ''}${htmlPath}`
   
   return (
@@ -139,7 +139,7 @@ function App() {
   // Determine basename from PUBLIC_URL environment variable
   // This is set based on the "homepage" field in package.json
   // If homepage is ".", PUBLIC_URL will be empty (for root deployment)
-  // If homepage is "/React-Course-Udemy", PUBLIC_URL will be "/React-Course-Udemy"
+  // If homepage is "/Course_FE", PUBLIC_URL will be "/Course_FE"
   const basename = process.env.PUBLIC_URL || ''
   
   return (
